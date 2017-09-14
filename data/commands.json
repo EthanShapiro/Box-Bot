@@ -1,7 +1,7 @@
 {
 "joke":"ask for a random joke",
 "quote":"ask for a random quote",
-"music":"type (play songtitle) and we will try to get your desired song",
+"music":"type (music songtitle) and we will try to get your desired song",
 "hello":"ask for a greeting",
 "bye":"ask for a salutation",
 "off":"i'll stop listening",

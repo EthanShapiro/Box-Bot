@@ -1,6 +1,7 @@
 def get_string_input():
-    response = input('(type help to hear a list of the commands)\nPlease enter a command: ')
+    response = input('Awaiting command: ')
     return response
+
 
 def analyze_input(response, commands):
     """
@@ -20,11 +21,11 @@ def analyze_input(response, commands):
     command = None
     extras = None   # Anything after the command that is needed for the module to process
     for i, word in enumerate(response):
-        if word in commands.keys():
+        if word in commands:
             command = word
             extras = response[i+1:]
         else:
-            for c in commands.keys():
+            for c in commands:
                 if words_are_similar(c, word):  # The user may have mistyped, check for similar words
                     command = c
                     extras = response[i+1:]

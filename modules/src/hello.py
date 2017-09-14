@@ -1,8 +1,10 @@
 from utilities import dataRetreiver as dR
 
-GREETINGS_LOCATION = 'C:/Users/Ethan/Documents/GitHub/Box-Bot/data/greetings.json'
-
+GREETINGS_LOCATION = '/data/greetings.json'
 
 def process(user_input):
     greeting = dR.get_single_random(GREETINGS_LOCATION)
+    if not greeting:
+        greeting = "I'm sorry, not greetings currently"
+
     return greeting

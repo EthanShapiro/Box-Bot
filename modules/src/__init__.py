@@ -5,5 +5,5 @@ __all__ = [
     'help',
     'joke',
     'music',
-    'quotes'
+    'quote'
 ]
